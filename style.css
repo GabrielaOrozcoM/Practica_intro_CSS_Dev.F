@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(103, 85, 140);
+}
+h1{
+    text-align: center;
+    color: antiquewhite;
+    background-color: rgba(79, 6, 21, 0.449);
+    border: 3px solid rgb(46, 9, 23);
+}
+h2{
+    border: 2px solid rgba(0, 0, 0, 0.159);
+    background-color: rgba(182, 192, 235, 0.148);
+}
+h3{
+    color: rgba(218, 206, 201, 0.728);
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(8, 4, 8, 0.4);
+}
+p{
+    font-size: 20px;
+    width: auto;
+    
+}
+.estilorecuentoP{
+    font-size: 25px;
+    width: auto;
+    background-color: rgba(132, 109, 180, 0.148);
+}
+.ulprincipal{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 0% 5% 1% 5%;
+    background-color: rgba(67, 59, 112, 0.269);
+}
+
+li{
+    font-size: 25px;
+}
+span{
+    font-size: 17px;
+}
+li :hover
+{
+    font-size: 30px;
+}
