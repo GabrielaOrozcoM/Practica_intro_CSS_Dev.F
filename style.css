@@ -1,11 +1,15 @@
+* {
+  box-sizing: border-box;
+}
 body{
-    background-color: #6f523bff;
+    background-color: #442d1c;
 }
 h1{
     text-align: left;
-    color: #FFFFFF;
-    background-color: #9A8873;
-    border: solid 7px #FFFFFF;
+    color: #e8d1a7;
+    background-color: none;
+    border: solid 5px #ffffff5e;
+    border-radius: 10px 10px 0 0;
     padding: 10px 0px 10px 20px;
     margin-top: 10px;
     margin-bottom: 7px;
@@ -13,14 +17,21 @@ h1{
 }
 .buttonmenu{
     width: 100%;
-    background-color: #e8d1c5;
+    background-color: #e8d1a7;
+    border: 0px;
+    border-radius: 10px;
     font-family: cursive;
     font-size: 15px;
     font-style: oblique;
     padding-bottom: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+.buttonmenu:hover{
+    background-color: #9d9167;
+    font-size:larger;
+    color: #e8d1c5;
 }
 .imgbutton{
-    height: 350px;
+    height: 370px;
     padding: 10px 0 20px 0;
 }
