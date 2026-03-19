@@ -51,7 +51,7 @@ body{
     flex-wrap: wrap;
 }
 .contenedor-principal {
-    display: flex; /* Esto pone al lateral y al contenido lado a lado */
-    flex-grow: 1;  /* Hace que este bloque abarque todo el espacio hacia abajo */
+    display: flex;
+    flex-grow: 1;
     width: 100%;
 }
