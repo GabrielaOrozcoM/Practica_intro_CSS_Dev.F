@@ -15,10 +15,8 @@
             <div class="lateral">
                 <button class="btn_lateral" onclick="mostrar('historia')">memes con historia</button>
                 <button class="btn_lateral" onclick="mostrar('random')">Random</button>
-                <button class="btn_lateral">los top</button>
-                <button class="btn_lateral">favoritos del momento</button>
-                <button class="btn_lateral">ancestros</button>
-                <button class="btn_lateral">stickers</button>
+                <button class="btn_lateral" onclick="mostrar('ancestros')">ancestros</button>
+                <button class="btn_lateral" onclick="mostrar('stickers')">stickers</button>
                 <a href="index.html"><button class="btn_lateral">Home</button></a>
             </div>
             
@@ -114,24 +112,147 @@
         </div>
             `;
         }
-        if (seccion === 'top') {
-            zonaContenido.innerHTML = `
-            
-            `;
-        }
-        if (seccion === 'favs') {
-            zonaContenido.innerHTML = `
-            
-            `;
-        }
+        
         if (seccion === 'ancestros') {
             zonaContenido.innerHTML = `
-            
+            <div class="cuadro1">
+                <h2 style="color: #ca0e6c; text-shadow: 0px 0px 10px #FF007F; text-align: center; margin: 0;">🦖 El Salón de la Fama: Rage Comics</h2>
+                <p style="text-align: center; color: white; margin-top: 10px;">Un homenaje a la edad de piedra del internet. Antes de TikTok y del shitpost abstracto, estos rostros hechos en MS Paint eran los reyes absolutos del mundo.</p>
+            </div>
+
+            <div class="cuadro2" style="display: flex; flex-direction: column; gap: 20px; padding: 20px;">
+
+                <div class="item-grid-meme" style="width: 100%; max-width: 600px; margin: 0 auto; aspect-ratio: initial; height: auto;">
+                    <img src="ancestros/ancestro1.jpeg" alt="Cereal Guy" class="imagenvista">
+                    <h3 style="color: #ffffff; text-align: center; margin: 10px 0;">Cereal Guy (El Sabio del Cereal)</h3>
+                    <p style="text-align: center; color: white;"><strong>Lore:</strong> El tipo que siempre tenía la respuesta correcta o una crítica sarcástica para todo... hasta que algo lo dejaba tan en shock que escupía su comida.</p>
+                </div>
+
+                <div class="item-grid-meme" style="width: 100%; max-width: 600px; margin: 0 auto; aspect-ratio: initial; height: auto;">
+                    <img src="ancestros/ancestro2.jpg" alt="Chico serio" class="imagenvista">
+                    <h3 style="color: #ffffff; text-align: center; margin: 10px 0;">El Juicio Silencioso</h3>
+                    <p style="text-align: center; color: white;"><strong>Lore:</strong> Esa mirada serena pero profundamente decepcionada de cuando escuchas a alguien decir una barbaridad y decides que ni siquiera vale la pena discutir.</p>
+                </div>
+
+                <div class="item-grid-meme" style="width: 100%; max-width: 600px; margin: 0 auto; aspect-ratio: initial; height: auto;">
+                    <img src="ancestros/ancestro3.png" alt="Fuck Yea" class="imagenvista">
+                    <h3 style="color: #ffffff; text-align: center; margin: 10px 0;">Fuck Yea (El Triunfador)</h3>
+                    <p style="text-align: center; color: white;"><strong>Lore:</strong> Conectaste la USB al primer intento. Atrapaste algo antes de que cayera al suelo. Esta es la cara de la victoria absoluta en las cosas más mundanas de la vida.</p>
+                </div>
+
+                <div class="item-grid-meme" style="width: 100%; max-width: 600px; margin: 0 auto; aspect-ratio: initial; height: auto;">
+                    <img src="ancestros/ancestro4.jpg" alt="Are you kidding me" class="imagenvista">
+                    <h3 style="color: #ffffff; text-align: center; margin: 10px 0;">Are You Kidding Me? (¿Me estás jodiendo?)</h3>
+                    <p style="text-align: center; color: white;"><strong>Lore:</strong> La frustración humana capturada en un dibujo de Paint. Usada cuando la estupidez de una situación superaba los límites de la física y la lógica.</p>
+                </div>
+
+                <div class="item-grid-meme" style="width: 100%; max-width: 600px; margin: 0 auto; aspect-ratio: initial; height: auto;">
+                    <img src="ancestros/ancestro5.jpg" alt="Collage de Rage Faces" class="imagenvista">
+                    <h3 style="color: #ffffff; text-align: center; margin: 10px 0;">Los 4 Jinetes del Internet Antiguo</h3>
+                    <p style="text-align: center; color: white;"><strong>Lore:</strong> Un collage sagrado con Forever Alone, el implacable Trollface, el inexpresivo Poker Face y Yao Ming riéndose de tus problemas. Si conoces a los cuatro, tu rodilla probablemente ya cruje al agacharte.</p>
+                </div>
+
+                <div class="item-grid-meme" style="width: 100%; max-width: 600px; margin: 0 auto; aspect-ratio: initial; height: auto;">
+                    <img src="ancestros/ancestro6.jpg" alt="Cara distorsionada" class="imagenvista">
+                    <h3 style="color: #ffffff; text-align: center; margin: 10px 0;">Shock Extremo (Trauma Desbloqueado)</h3>
+                    <p style="text-align: center; color: white;"><strong>Lore:</strong> Para representar esos momentos donde ves algo tan perturbador, increíble o traumatizante que la realidad misma se distorsiona frente a tus ojos.</p>
+                </div>
+
+                <div class="item-grid-meme" style="width: 100%; max-width: 600px; margin: 0 auto; aspect-ratio: initial; height: auto;">
+                    <img src="ancestros/ancestro8.jpg" alt="LOL Guy" class="imagenvista">
+                    <h3 style="color: #ffffff; text-align: center; margin: 10px 0;">LOL Guy (El Cajas)</h3>
+                    <p style="text-align: center; color: white;"><strong>Lore:</strong> Mucho antes de usar la calavera o escribir "JSJAJAJA", esta inmensa y absurda boca expresaba que te estabas riendo en la vida real.</p>
+                </div>
+
+                <div class="item-grid-meme" style="width: 100%; max-width: 600px; margin: 0 auto; aspect-ratio: initial; height: auto;">
+                    <img src="ancestros/ancestro9.jpg" alt="I see what you did there" class="imagenvista">
+                    <h3 style="color: #ffffff; text-align: center; margin: 10px 0;">I See What You Did There (Ya veo...)</h3>
+                    <p style="text-align: center; color: white;"><strong>Lore:</strong> La mirada cómplice perfecta. Se usaba exclusivamente cuando alguien lanzaba un chiste de doble sentido, un sarcasmo fino o una referencia muy otaku.</p>
+                </div>
+
+                <div class="item-grid-meme" style="width: 100%; max-width: 600px; margin: 0 auto; aspect-ratio: initial; height: auto;">
+                    <img src="ancestros/ancestro10.jpg" alt="Forever Alone" class="imagenvista">
+                    <h3 style="color: #ffffff; text-align: center; margin: 10px 0;">Forever Alone (Por Siempre Solo)</h3>
+                    <p style="text-align: center; color: white;"><strong>Lore:</strong> El santo patrono del día de San Valentín. Representa la más absoluta, patética y cómica soledad. El ancestro directo de todos los memes tristes de la actualidad.</p>
+                </div>
+
+            </div>
             `;
         }
         if (seccion === 'stickers') {
             zonaContenido.innerHTML = `
-            
+            <div class="cuadro1">
+    <h2 style="color: #ca0e6c; text-shadow: 0px 0px 10px #FF007F; text-align: center; margin: 0;">📱 La Bandeja de Stickers</h2>
+    <p style="text-align: center; color: white; margin-top: 10px;">Para cuando las palabras sobran y solo un gatito deforme o un pollito amarrado pueden expresar lo que sientes.</p>
+</div>
+
+<div class="cuadro2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding: 30px; align-items: center; justify-items: center;">
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker1.jpg" alt="Jerry riendo" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker2.jpg" alt="Rata gritando" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker3.jpg" alt="Gato riendo" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker4.jpg" alt="Gato blep" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker5.jpg" alt="Gatito leche" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker6.jpg" alt="Pollito cursed" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker7.jpg" alt="Tiburón gordo" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker8.jpg" alt="Oveja juzgando" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker9.jpg" alt="Cosorro" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker10.jpg" alt="Sacreblu" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker11.jpg" alt="Cereal perturbado" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker12.jpg" alt="Gusano morado" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker13.jpg" alt="Ojo de gato" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker14.jpg" alt="Bicho asomándose" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker16.jpg" alt="Cerdito raro" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+    <div class="item-grid-meme" style="width: 100%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.2);">
+        <img src="stickers/sticker17.jpg" alt="Patricio malo" style="max-width: 90%; max-height: 90%; border-radius: 10px; object-fit: contain;">
+    </div>
+
+</div>
             `;
         }
     }
