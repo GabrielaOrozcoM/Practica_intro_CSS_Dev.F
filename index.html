@@ -14,7 +14,7 @@
             
             <div class="lateral">
                 <button class="btn_lateral" onclick="mostrar('historia')">memes con historia</button>
-                <button class="btn_lateral">Random</button>
+                <button class="btn_lateral" onclick="mostrar('random')">Random</button>
                 <button class="btn_lateral">los top</button>
                 <button class="btn_lateral">favoritos del momento</button>
                 <button class="btn_lateral">ancestros</button>
@@ -27,14 +27,17 @@
                     <h1>"Bienvenid@... Prepárate para perder tu tiempo de la forma más productiva posible."</h1>
                     <p>Sirve y aprendemos a como NO hacer una página web</p>
                 </div>
-                <p>Un minuto de silecio por los olvidados..</p>
+               
                 <div class="cuadro2">
-                    
-                    
+                    <center>
+                        <h2>Un minuto de silecio por los olvidados..</h2>
                         <img src="home/olvidado1.jpeg" class="imagenvista">
                         <img src="home/olvidado2.jpeg" class="imagenvista">
-                    
-
+                        <img src="home/olvidado3.jpg" class="imagenvista">
+                        <img src="home/olvidado4.jpg" class="imagenvista">
+                        <img src="home/olvidado5.jpg" class="imagenvista">
+                        <img src="home/olvidado6.jpg" class="imagenvista">
+                    </center>
                 </div>
                 
             </div>
@@ -44,15 +47,92 @@
     </body>
 </html>
 <script>
+    function tirarRuleta() {
+    let numeroRandom = Math.floor(Math.random() * 10) + 1;
+    let rutaImagen = 'randommomos/' + numeroRandom + '.jpg';
+    let imagenElemento = document.getElementById('momo-mostrado');
+    let contenedorElemento = document.getElementById('contenedor-resultado');
+    imagenElemento.src = rutaImagen;
+    contenedorElemento.style.display = 'block';
+}
     function mostrar(seccion) {
         const zonaContenido = document.querySelector('.contenido');
         if (seccion === 'historia') {
             zonaContenido.innerHTML = `
-                <h2 style="color: white; text-align: center;">📖 Memes con Historia</h2>
-                <p style="color: white; text-align: center;">Aquí te cuento cómo nació el Trollface en 2008...</p>
-                <img src="tu-imagen-trollface.jpg" style="display: block; margin: 0 auto; width: 200px;">
+                <div class="cuadro1">
+                <h2 style="color: #ca0e6c; text-shadow: 0px 0px 10px #FF007F;">hasta ellos tienen su arco de historia...</h2>
+                <p>Conoce el trágico, profundo y absurdo origen de los memes que usas para evitar expresar tus verdaderos sentimientos.</p>
+                </div>
+                <div class="cuadro2">
+                <h3 style="color: #ffffff; margin-bottom: 10px;">El Michi del Odio Jarocho</h3>
+                <img src="historia/angry.jpg" alt="Michi enojado" class="imagenvista">
+                <p><strong>El Lore:</strong> Aunque los gatos son los reyes de internet desde los tiempos de los egipcios, este espécimen captura a la perfección la ira contenida. Sus ojos oscuros reflejan el vacío existencial.</p>
+                <p><strong>Cuándo usarlo:</strong> Cuando alguien te dice "buenos días" pero tú todavía no te tomas tu café, o cuando el profesor deja tarea un viernes a las 11:59 PM.</p>
+                </div>
+                <div class="cuadro2">
+                <h3 style="color: #ffffff; margin-bottom: 10px;">El Perro "Dudeishon" (Huh?)</h3>
+                <img src="historia/dudeishon.jpg" alt="Perro confundido" class="imagenvista">
+                <p><strong>El Lore:</strong> Una imagen pixelada y borrosa que representa el "lag" cerebral humano. El perro no sabe dónde está, qué año es, ni por qué le están hablando. La baja resolución solo lo hace mil veces más gracioso.</p>
+                <p><strong>Cuándo usarlo:</strong> Cuando te explican matemáticas por quinta vez y sigues sin entender cómo despejar la X.</p>
+                </div>
+                <div class="cuadro2">
+                <h3 style="color: #ffffff; margin-bottom: 10px;">Bob Esponja Buscando el Lente</h3>
+                <img src="historia/lentedecontacto.jpg" alt="Bob esponja cansado" class="imagenvista">
+                <p><strong>El Lore:</strong> Sacado directamente de un fotograma maldito de Bob Esponja. Visualmente representa a alguien buscando algo en el suelo, pero internet lo transformó en el símbolo universal del agotamiento extremo y la miopía.</p>
+                <p><strong>Cuándo usarlo:</strong> Cuando te levantas de la cama muy rápido y se te reinicia el Windows, o cuando buscas el cargador de tu celular a las 3 AM.</p>
+                </div>
+                <div class="cuadro2">
+                <h3 style="color: #ffffff; margin-bottom: 10px;">Pablo "RENUNSIO"</h3>
+                <img src="historia/renunsio.jpg" alt="Pablo Backyardigans renunciando" class="imagenvista">
+                <p><strong>El Lore:</strong> Pablo de los Backyardigans dándole la espalda a sus responsabilidades para irse a vivir a la selva. La falta de ortografía intencional ("renunsio" en vez de renuncio) le quita toda seriedad y lo convierte en arte puro.</p>
+                <p><strong>Cuándo usarlo:</strong> Ante cualquier inconveniente menor en la vida. ¿Se te quemó el agua? RENUNSIO. ¿Tienes que trabajar? RENUNSIO.</p>
+                </div>
+                <div class="cuadro2">
+                <h3 style="color: #ffffff; margin-bottom: 10px;">El Cachorro de Patata Dorado</h3>
+                <img src="historia/perruito.jpg" alt="pequeño cachorro de golden retriever sostenido como una patata" class="imagenvista">
+                <p><strong>El Lore:</strong> Este meme muestra a un pequeño cachorro de golden retriever siendo sostenido por alguien, a menudo con una expresión de pura confusión y ternura. Representa la inocencia, la dulzura y el sentimiento de ser 'solo un pequeño chico' (o 'pequeña chica'). Su forma compacta y su color dorado le han valido el apodo de 'perro de patata'.</p>
+                <p><strong>Cuándo usarlo:</strong> Úsalo para cualquier cosa que sea innegablemente linda, pequeña o que represente simple alegría pura. También cuando te sientas pequeño, inofensivo y necesites que alguien te sostenga como un pequeño perro de patata.</p>
+                </div>
             `;
 
+        }
+        if (seccion === 'random') {
+            zonaContenido.innerHTML = `
+            <div class="cuadro1">
+            <h2 style="color: #ca0e6c; text-shadow: 0px 0px 10px #FF007F; text-align: center; margin: 0;">La Ruleta de Memes</h2>
+            <p style="text-align: center; color: white; margin-top: 10px;">Presiona el botón bajo tu propio riesgo para invocar un meme aleatorio de la carpeta sagrada.</p>
+        </div>
+
+        <div class="cuadro2" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 400px;">
+            
+            <button class="boton-suerte" onclick="tirarRuleta()">Click</button>
+
+            <div id="contenedor-resultado" style="display: none; margin-top: 30px; text-align: center;">
+                <img id="momo-mostrado" src="" alt="Momo aleatorio" class="imagenvista">
+            </div>
+
+        </div>
+            `;
+        }
+        if (seccion === 'top') {
+            zonaContenido.innerHTML = `
+            
+            `;
+        }
+        if (seccion === 'favs') {
+            zonaContenido.innerHTML = `
+            
+            `;
+        }
+        if (seccion === 'ancestros') {
+            zonaContenido.innerHTML = `
+            
+            `;
+        }
+        if (seccion === 'stickers') {
+            zonaContenido.innerHTML = `
+            
+            `;
         }
     }
 </script>
